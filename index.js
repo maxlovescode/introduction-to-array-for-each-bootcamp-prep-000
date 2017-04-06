@@ -1,5 +1,7 @@
-var evens = [0, 2, 4, 6, 8, 10]
+function doToElementsInArray(array, callback) {
+  array.forEach(callback)
+}
 
-for (var i = 0; l = evens.length; i < l; i++) {
-  console.log(`${evens[i]} is not odd!`)
+function changeCompletely(element, index, array) {
+  array[index] = (Math.random() * 100).toString() + '!!!'
 }
